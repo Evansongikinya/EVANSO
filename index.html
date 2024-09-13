@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Clinic</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+li{
+    display: inline-block;
+}
+ .body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+header nav ul {
+    margin-left: 20px;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+header nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.hero {
+    background-color: #e0e0e0;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.hero-content h2 {
+    margin-top: 0;
+    font-size: 2.5em;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.evans{
+    background-color: #e0e0e0;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    text-align:right;
+}
+
+.evans-content h2 {
+    margin-top: 0;
+    font-size: 2.5em;
+}
+
+.evans-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.search-form input[type="text"] {
+    padding: 10px;
+    font-size: 1em;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.hero-buttons button {
+    padding: 10px 20px;
+    font-size: 1em;
+    margin-right: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.statistics {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.stat-item h3 {
+    margin: 0;
+    font-size: 2em;
+    color: #333;
+}
+
+.services {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.service-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.service-item {
+    background-color: white;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.find {
+    background-color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.find-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.find-item button {
+    padding: 20px;
+    font-size: 1.2em;
+    width: 150px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.doctors {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.doctor-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.testimonial{
+    display: inline-block;
+}
+
+.doctor-item {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.steps-container{
+    display: flex;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1> + Medlop</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Doctors</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">                                                     
+            <h2>We Care About Your Health</h2>
+            <p>Your good health our happiness</p>
+            <form action="#" class="search-form">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+            <div class="hero-buttons">
+                <button>Book Tour</button>
+                <button>Play Video</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="c:\Users\ADELAIDE\Downloads\clinic.jpg" alt="Health Image">
+        </div>
+        </section>
+
+    <section class="statistics">
+        <div class="stat-item">
+            <h3>95+</h3>
+            <p>AP Specialist</p>
+        </div>
+        <div class="stat-item">
+            <h3>1,500+</h3>
+            <p>Principal & Service</p>
+        </div>
+        <div class="stat-item">
+            <h3>3,000+</h3>
+            <p>Million Customers</p>
+        </div>
+        <div class="stat-item">
+            <h3>100+</h3>
+            <p>Checkout Supports</p>
+        </div>
+    </section>
+<!--services-->
+    <section class="services">
+        <h2>Our Best Services</h2>
+        <div class="service-grid">
+            <div class="service-item">
+                <h3>AP Specialist</h3>
+                <p>Available Any Time</p>
+            </div>
+            <div class="service-item">
+                <h3>Principal & Service</h3>
+                <p>Some of Services Are free</p>
+            </div>
+            <div class="service-item">
+                <h3>Million Customers</h3>
+                <p>We are able to receive many Patient</p>
+            </div>
+            <div class="service-item">
+                <h3>Checkout Supports</h3>
+                <p>Those who are disable are also taken care of</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="find">
+        <h2>Are You Looking For:</h2>
+        <div class="find-grid">
+            <div class="find-item">
+                <button>Doctors</button>
+            </div>
+            <div class="find-item">
+                <button>Consult</button>
+            </div>
+            <div class="find-item">
+                <button>Pharmacy</button>
+            </div>
+            <div class="find-item">
+                <button>Diagnostics</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="doctors">
+        <h2>Our Best Doctors</h2>
+        <div class="doctor-grid">
+            <div class="doctor-item">
+                <img src="c:\Users\ADELAIDE\Downloads\doctor 5.jpg" alt="Dr. Steve">
+                <p>Dr. Steve, Ph.D.</p>
+                Dentist
+            </div>
+            <div class="doctor-item">
+                <img src="c:\Users\ADELAIDE\Downloads\doctor 2.jpg" alt="Dr. Susan">
+                <p>Dr. Susan, Ph.D.</p>
+                Surgeon
+            </div>
+            <div class="doctor-item">
+                <img src="c:\Users\ADELAIDE\Downloads\doctor 3.jpg" alt="Dr. Angel">
+                <p>Dr. Angel, Ph.D.</p>
+                Nurses
+            </div>
+        </div>
+    </section>
+   <!--footer-->
+    <footer>
+        <p>&copy; 2024 MedTop. All rights reserved.</p>
+    </footer>
+
+<!--steps-->
+    <section id="easy-steps">
+        <h2>Easy Steps And Get Your Solution</h2>
+        <div class="steps-container">
+            <div class="step">
+                <img src="c:\Users\ADELAIDE\Downloads\download.jpg" alt="step 1 icon">
+                <p>check service profile </p>
+                </div>
+
+             <div class="step">
+                <img src="c:\Users\ADELAIDE\Downloads\evans.jpg" alt="step 2 icon">
+                <p>request consultation</p>
+                </div>
+
+                <div class="step">
+                    <img src="c:\Users\ADELAIDE\Downloads\evans.jpg" alt="step 3 icon">
+                    <p>receive your consultation</p>
+                </div>
+
+                <div class="step">
+                    <img src="c:\Users\ADELAIDE\Downloads\evans.jpg" alt="step 3 icon">
+                    <p>get your solution</p>
+                </div>
+
+                
+                 </div>
+                 </section>  
+                    
+
+                 <section class="hero">
+                    <div class="hero-content">
+                        <h2>Best Doctors Anywhere And Anytime</h2>
+                        <p>Doctors are able to serve you efficiently</p>
+                    </div>
+                    <div class="hero-image">
+                        <img src="c:\Users\ADELAIDE\Downloads\clinic.jpg" alt="Health Image">
+                    </div>
+                    </section>
+              
+
+<fieldset>
+                    <section class="evans">
+                        <div class="evans-content">
+                            <h2>Urgent Online care Solution Your Problem</h2>
+                            <p>You can find our doctors on socila media</p>
+                        </div>
+                        <div class="evans-image">
+                            <img src="c:\Users\ADELAIDE\Downloads\evans.jpg" alt="Health Image">
+                        </div>
+                        </section>
+</fieldset>
+
+            <!--section what people say about us-->
+            <section id="testimonials">
+                <h2>What People Say About Us</h2>
+            
+                <div class="testimonial">
+                    <img src="c:\Users\ADELAIDE\Downloads\doctor 4.jpg" alt="User Image">
+                    <p><strong>John Doe</strong></p>
+                    <p>=>Get Free Treatment Easily</p>
+                </div>
+                <div class="testimonial">
+                    <img src="c:\Users\ADELAIDE\Downloads\DOCTOR.jpg" alt="User Image">
+                    <p><strong>Jane Smith</strong></p>
+                    <p>=>The Hospital Has Highly Machines</p>
+
+                </div>
+            </section>
+        <fieldset>
+            <section id="register">
+                <h2>Want to Register Easily?</h2>
+                <button>Submit Form</button>
+            </section>
+            </fieldset>
+        <!--footer-->
+        <fieldset>
+            <footer>
+                <p>MEDICAL LOGO</p>
+                <img src="c:\Users\ADELAIDE\Downloads\evans.jpg" alt="Medico Logo">
+                </footer>
+                </fieldset>
+
+                <div class="logo">
+                    <h1> + Medlop</h1>
+                    <p></p>We Are Available Any Time</p>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Doctors</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </nav>
+                <div class="social-media">
+                    <img src="facebook.jfif" alt="Facebook">
+                    <img src="twitter.png" alt="Twitter">
+                    <img src="intergram.jfif" alt="Instagram">
+                </div> 
